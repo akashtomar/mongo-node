@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Hello! mongo</title>
+    </head>
+    <body>
+        <div>
+            <h3>Details from</h3>
+        </div>
+        <div align='center'>
+        <form action='/in' method='post'>
+            <input type='text' name='name' placeholder='enter full name'/>
+            <br/><br/>
+            <input type='text' name='address' placeholder='street, city, country'/>
+            <br/><br/>
+            <input type='submit' value='go!' name='submit'/>
+
+        </form>
+        </div>
+    <%if(success==true){%>
+        <%-include('success')%>
+        <%if(dataDiv==true){%>
+            <%-include('data')%>
+            <%}%>
+    <%}%>
+    </body>
+
+</html>
